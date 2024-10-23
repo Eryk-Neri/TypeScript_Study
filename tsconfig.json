@@ -1,13 +1,15 @@
 {
     "compilerOptions":{
-        "outDir":"dist/js", // Local aonde o codigo compilado vai ser salvo
+        "outDir":"app/dist/js", // Local aonde o codigo compilado vai ser salvo
         "target": "ES6", //Verion JS
         "noEmitOnError": true, //Só compila quando não tiver erro
         "noImplicitAny": true, //força o DEV a declarar os tipos - retira o tipo ANY como padrão
         "removeComments": true, //Remove comentarios
         "strictNullChecks": true, //Força o Dev a declarar quais variaveis pode receber null 
+        "experimentalDecorators": true, // 
+        "sourceMap": true, // mapear o debugger pelo arquivos ts no nevegador *|SÓ PARA PRODUÇÃO|*
     },
     "include":[
-        "app/**/*" //Compila todos os aquivos dentro de app e dentro dele tmb 
+        "app/src/**/*" //Compila todos os aquivos dentro de app e dentro dele tmb 
     ]
 }
